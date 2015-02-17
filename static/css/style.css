@@ -1,14 +1,22 @@
 html {
   font-family: 'Open Sans', sans-serif;;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
    min-height: 100%;
+   color:white;
 }
 
 body {
 	margin: 0;
 	padding: 0;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size:36px;
+	font-weight: 800;
+	color: #333333;
 }
 
 .home, .video {
@@ -17,6 +25,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; 
+}
+
+.bio {
+	background-color: black;
+	/*background: url(../images/bio-bg.jpg) no-repeat center center fixed; */
 }
 
 .logo {
@@ -28,6 +41,12 @@ body {
 	margin-top: 20%;
 	max-width:100%;
 	height: auto;
+}
+
+.bio article {
+	padding: 20px;
+	width: 50%;
+	margin-bottom:60px;
 }
 
 footer {
@@ -43,14 +62,13 @@ footer {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 16px;
 }
 
 footer ul {
 	float: right;
 	text-transform: uppercase;
-	color:white;
 	list-style: none;
 	margin-right:20px;
 }
@@ -86,6 +104,10 @@ a, a:hover, a:visited {
 	}
 	footer img {
 		display: none;
+	}
+
+	.bio article {
+		width: auto;
 	}
 
 	.video-wrapper {
