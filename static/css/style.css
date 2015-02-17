@@ -11,7 +11,7 @@ body {
 	padding: 0;
 }
 
-.home {
+.home, .video {
 	background: url(../images/mossy-bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -70,14 +70,43 @@ a, a:hover, a:visited {
 	color: white;
 }
 
+.video-container {
+	margin-bottom: 5px;
+}
+
+.video-wrapper {
+	padding-bottom: 80px;
+	width: 600px;
+	margin: 0 auto;
+}
+
 @media (max-width: 800px) {
+	footer ul {
+		text-align: center;
+	}
 	footer img {
 		display: none;
 	}
 
-	.video-wrapper iframe {
+	.video-wrapper {
+	width: auto;
+	
+	}
+
+	.video-container {
+	    position: relative;
+	    padding-bottom: 56.25%;
+	    padding-top: 30px; height: 0; overflow: hidden;
+	}
+
+	.video-container iframe,
+	.video-container object,
+	.video-container embed {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
 	    width: 100%;
-	    height: auto%;
+	    height: 100%;
 	}
 }
 
