@@ -1,19 +1,22 @@
-html { 
-  background: url(../images/mossy-bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-  min-height: 100%;
+html {
   font-family: 'Open Sans', sans-serif;;
   font-style: normal;
   font-weight: 300;
+  position: relative;
+   min-height: 100%;
 }
 
 body {
 	margin: 0;
 	padding: 0;
+}
+
+.home {
+	background: url(../images/mossy-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
 }
 
 .logo {
@@ -70,6 +73,11 @@ a, a:hover, a:visited {
 @media (max-width: 800px) {
 	footer img {
 		display: none;
+	}
+
+	.video-wrapper iframe {
+	    width: 100%;
+	    height: auto%;
 	}
 }
 
